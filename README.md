@@ -1,8 +1,10 @@
-/******README file for printf project******/
-/**Contributors: Iguagbonmwen Osaivbie & Anokye Angela Nana**/
-/**Project Name: printf**/
+			/******README file for printf project******/
+	/**Contributors: Iguagbonmwen Osaivbie & Anokye Angela Nana**/
 
-This Project comprises the following tasks
+	/**Project Name: printf**/
+
+TASKS
+
 0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life.
 	. writing a function that produces output according to a format
 
