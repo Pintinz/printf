@@ -20,9 +20,6 @@ int _printf(const char *format, ...)
 
 	va_start(list, format);
 
-	if (format[0] == '%' && format[1] == '\0')
-		return (-1);
-
 	for (i = 0; format && format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
@@ -30,7 +27,7 @@ int _printf(const char *format, ...)
 			buffer[buff_ind++] = format[i];
 			if (buff_ind == BUFF_SIZE)
 				print_buffer(buffer, &buff_ind);
-			return (write(1, &format[i], 1)); /*edited*/
+			/* write(1, &format[i], 1);*/
 			printed_chars++;
 		}
 		else
