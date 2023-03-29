@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdarg.h>
+
 
 /************************* PRINT CHAR *************************/
 
@@ -85,6 +87,8 @@ int print_string(va_list types, char buffer[],
  * @size: Size specifier
  * Return: Number of chars printed
  */
+
+
 int print_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -95,7 +99,8 @@ int print_percent(va_list types, char buffer[],
 	UNUSED(precision);
 	UNUSED(size);
 
-	return (write(1, '%', 1));
+	return (putchar('%'));
+
 }
 
 /************************* PRINT INT *************************/
